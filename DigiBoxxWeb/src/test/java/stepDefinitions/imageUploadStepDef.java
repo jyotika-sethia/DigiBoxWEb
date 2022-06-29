@@ -5,6 +5,10 @@ import java.awt.AWTException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,6 +19,11 @@ public class imageUploadStepDef {
 	WebDriver driver;
 	digiLoginPage dl;
 	imageUploadPage iu;
+
+//	ExtentSparkReporter spark = new ExtentSparkReporter("extentreport.html")
+//		 
+//	 ExtentReports extent = new ExtentReports();
+	 
 	
 	
 	 @Given("User login to the webpage")

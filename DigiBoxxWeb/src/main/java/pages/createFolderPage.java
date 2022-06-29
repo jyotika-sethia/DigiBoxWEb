@@ -48,6 +48,8 @@ public class createFolderPage {
 	}
 	public void folder_name(String str)
 	{
+		new WebDriverWait(driver, Duration.ofSeconds(10))
+		.until(ExpectedConditions.visibilityOf(name));
 		name.sendKeys(str);
 	}
 	public void createfolder()

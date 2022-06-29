@@ -21,7 +21,7 @@ public class ImageInsideFolderPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(how=How.XPATH,using="//div[@id='kebab-icon-box_126213']/following::div[1]")
+	@FindBy(how=How.XPATH,using="//div[@class='folder-wrap']")
 	WebElement folder;
 
 	@FindBy(how=How.XPATH,using="//span[@class='add-btn']")

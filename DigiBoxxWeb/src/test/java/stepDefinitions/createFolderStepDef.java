@@ -1,8 +1,14 @@
 package stepDefinitions;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Setup.Base_setup;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,27 +18,41 @@ import pages.digiLoginPage;
 
 
 
-public class createFolderStepDef {
+
+public class createFolderStepDef extends Base_setup {
 
 	WebDriver driver;
 	digiLoginPage dl;
 	createFolderPage cf;
 
 	 @Given("User login")
-	 public void user_login() throws InterruptedException {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\sethi\\eclipse-workspace\\DigiWeb\\src\\main\\resources\\Driver\\chromedriver.exe");
-			driver= new ChromeDriver();
-			driver.get("https://apptest.digiboxx.com/login");
-			driver.manage().window().maximize();
+	 public void user_login() throws InterruptedException, IOException {
+//			System.setProperty("webdriver.chrome.driver", "C:\\Users\\sethi\\eclipse-workspace\\DigiWeb\\src\\main\\resources\\Driver\\chromedriver.exe");
+//			driver= new ChromeDriver();
+//			driver.get("https://apptest.digiboxx.com/login");
+//			driver.manage().window().maximize();
+//			Thread.sleep(2000);
+//			dl=new digiLoginPage(driver);
+//			dl.login_details("mozark14", "mozark14251093@gmail.com", "Gaurav@123");
+//			Thread.sleep(3000);
+//			dl.click_login();
+//			cf	=new createFolderPage(driver);
+//		 	Thread.sleep(3000);
+		    driver= initialiseDriver();
 			Thread.sleep(2000);
 			dl=new digiLoginPage(driver);
 			dl.login_details("mozark14", "mozark14251093@gmail.com", "Gaurav@123");
 			Thread.sleep(3000);
+
+
+
 			dl.click_login();
 			cf	=new createFolderPage(driver);
 	 }
 	 
-	 @When("User click on add")
+	
+
+	@When("User click on add")
 	 public void user_click_on_add() throws InterruptedException {
 		 Thread.sleep(3000);
 		 cf.add_button();
@@ -56,6 +76,9 @@ public class createFolderStepDef {
 		cf.createfolder();
 			    
 	}
+
+	 
+
 
 
 }

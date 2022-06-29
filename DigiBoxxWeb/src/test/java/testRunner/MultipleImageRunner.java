@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\Users\\sethi\\eclipse-workspace\\DigiBoxxWeb\\Feature",
+@CucumberOptions(features="C:\\\\Users\\\\sethi\\\\git\\\\repository\\\\DigiBoxWeb\\\\DigiBoxxWeb\\\\Feature",
 				glue= {"stepDefinitions"},
 				monochrome=true,
 				tags="@MultipleImage",
