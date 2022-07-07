@@ -10,7 +10,9 @@ import io.cucumber.junit.CucumberOptions;
 				glue= {"stepDefinitions"},
 				monochrome=true,
 				tags="@DigiBoxxLogin",
-				plugin={"pretty","html:target/HtmlReports"}
+				plugin={"pretty","html:target/HtmlReports"
+				,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+						}
 		)
 public class lRunner {
 

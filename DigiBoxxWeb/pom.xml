@@ -1,101 +1,122 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>DigiBoxxWeb</groupId>
-  <artifactId>DigiBoxxWeb</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
-    </properties>
-  
-  
-   <dependencies>
-  
-  
-  	<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>DigiBoxxWeb</groupId>
+	<artifactId>DigiBoxxWeb</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+
+	<dependencies>
+
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
-		    <groupId>commons-io</groupId>
-		    <artifactId>commons-io</artifactId>
-		    <version>2.11.0</version>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
 		</dependency>
-			  	
-  
-  		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-chrome-driver</artifactId>
-    <version>4.2.2</version>
-</dependency>
-  		
-  		
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-    
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-java</artifactId>
-    <version>7.4.1</version>
-</dependency>
 
 
-	<dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>4.2.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.4.1</version>
+		</dependency>
+
+
+		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>7.4.1</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-core</artifactId>
-    <version>7.4.1</version>
-</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>7.4.1</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-picocontainer</artifactId>
-    <version>7.4.1</version>
-    <scope>test</scope>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>7.4.1</version>
+			<scope>test</scope>
+		</dependency>
 
-		
-  
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>1.7.0</version>
+			<scope>test</scope>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
-		    <groupId>com.aventstack</groupId>
-		    <artifactId>extentreports</artifactId>
-		    <version>5.0.9</version>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.9</version>
 		</dependency>
-		
-		
-<dependency>
-   <groupId>tech.grasshopper</groupId>
-   <artifactId>extentreports-cucumber6-adapter</artifactId>
-   <version>2.13.0</version>
-   <scope>test</scope>
-</dependency>
-		
 
-
-
-
-  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-gherkin -->
 		<dependency>
-		    <groupId>io.cucumber</groupId>
-		    <artifactId>cucumber-gherkin</artifactId>
-		    <version>7.4.0</version>
+			<groupId>com.vimalselvam</groupId>
+			<artifactId>cucumber-extentsreport</artifactId>
+			<version>3.0.2</version>
 		</dependency>
-  
-  
-  	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+		<!-- https://mvnrepository.com/artifact/tech.grasshopper/extent-pdf-report -->
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extent-pdf-report</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/tech.grasshopper/htmlextentreporter -->
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>htmlextentreporter</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/klov-reporter -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>klov-reporter</artifactId>
+			<version>5.0.9</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-gherkin -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-gherkin</artifactId>
+			<version>7.4.0</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -109,51 +130,51 @@
 			<version>7.5</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>3.7.1</version>
-	</dependency>
-  	
-  	
-  	<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
-		<dependency>
-		    <groupId>org.apache.httpcomponents</groupId>
-		    <artifactId>httpclient</artifactId>
-		    <version>4.5.13</version>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.7.1</version>
 		</dependency>
 
-  </dependencies>
-  
-  
-  <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M7</version>
-                <configuration>
-                    <properties>
-                        <!-- Work around. Surefire does not include enough
+
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.13</version>
+		</dependency>
+
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M7</version>
+				<configuration>
+					<properties>
+						<!-- Work around. Surefire does not include enough
                              information to disambiguate between different
                              examples and scenarios. -->
-                        <configurationParameters>
+						<configurationParameters>
                             cucumber.junit-platform.naming-strategy=long
                         </configurationParameters>
-                    </properties>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+					</properties>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

@@ -30,7 +30,9 @@ public class DigiLoginStepDef {
 	}
 
 	@When("I enter Digispace")
-	public void i_enter_digispace() {
+	public void i_enter_digispace() throws InterruptedException {
+		System.out.println("1");
+		Thread.sleep(3000);
 		dl.enter_digi("mozark14");
 	 
 	}
