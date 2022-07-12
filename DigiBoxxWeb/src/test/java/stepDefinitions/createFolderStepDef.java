@@ -42,7 +42,7 @@ public class createFolderStepDef extends Base_setup {
 			Thread.sleep(2000);
 			dl=new digiLoginPage(driver);
 			dl.login_details("mozark14", "mozark14251093@gmail.com", "Gaurav@123");
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 
 
 
