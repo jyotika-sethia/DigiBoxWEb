@@ -11,8 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 				monochrome=true,
 				tags="@DigiBoxxLogin",
 				plugin={"pretty","html:target/HtmlReports1",
-						"json:target/MyReport/report1.json",
-						"junit:target/MyReport/report1.xml",
+						"json:target/MyReport/report.json",
+						"junit:target/MyReport/report.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 						}
 		)
