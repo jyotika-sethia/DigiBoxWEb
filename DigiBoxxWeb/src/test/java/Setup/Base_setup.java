@@ -5,12 +5,14 @@ package Setup;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,6 +24,20 @@ public class Base_setup
    
 	public  WebDriver initialiseDriver() throws IOException
 	{
+		
+//		DesiredCapabilities capabilities = new DesiredCapabilities();
+//		
+//		capabilities.setCapability("version", "latest");
+//		capabilities.setCapability("platform", "Windows 10");
+//		
+//		capabilities.setBrowserName("chrome");
+//		
+//		RemoteWebDriver driver = new RemoteWebDriver(new
+//		URL("https://oauth-josethia2702-88f5f:5f4e4b1d-2520-41de-9f6e-0fbf6b24c75a@ondemand"
+//				+ ".us-west-1.saucelabs.com:443/wd/hub"),capabilities);
+//		driver.get("https://apptest.digiboxx.com/login");
+		
+		
 		Properties prop=new Properties();
 		FileInputStream fis=new FileInputStream("C:\\Users\\sethi\\git\\repository\\DigiBoxWeb\\DigiBoxxWeb\\src\\main\\resources\\Driver\\data.properties");
 		prop.load(fis);
@@ -65,7 +81,7 @@ public class Base_setup
 			
 		}
 		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		return driver;
+	return driver;
 		
 	}
     

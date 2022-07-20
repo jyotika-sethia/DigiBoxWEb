@@ -20,9 +20,7 @@ public class imageUploadStepDef {
 	digiLoginPage dl;
 	imageUploadPage iu;
 
-//	ExtentSparkReporter spark = new ExtentSparkReporter("extentreport.html")
-//		 
-//	 ExtentReports extent = new ExtentReports();
+
 	 
 	
 	

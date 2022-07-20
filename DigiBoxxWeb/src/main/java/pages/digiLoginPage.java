@@ -47,7 +47,7 @@ public class digiLoginPage {
 			public void click_login() throws InterruptedException
 			{
 				login.click();
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 				click_here.click();
 			
 			}
